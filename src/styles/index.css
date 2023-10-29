@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background: rgb(164, 165, 208);
+}
+input{
+  color:#242424;
+}
+Input,
+Button {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  font-size: 15px;
+  width: 250px;
+  font-weight: 500;
+  outline: none;
+}
+
+Input:focus {
+  border: 1px solid rgb(164, 203, 208);
+}
+Input[type="text"],
+Input[type="email"],
+Input[type="password"] {
+  padding: 12px 20px;
+}
+.container {
+  display: grid;
+  place-items: center;
+  margin: 25px auto;
+  max-width: calc(100% - 10rem);
+}
+
+.login-box {
+  background: rgba(190, 182, 182, 0.562);
+  width: 300px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 32px 64px rgb(0 0 0 / 20%);
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: rgb(164, 165, 208);
+  color: white;
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.text-center{
+  text-align: center;
+}
+#root{
+  width: 100%;
+  height: 100vmin;
+}
+.text-danger{
+  color: rgb(208, 27, 27);
+}
+.flex{
+  display: flex;
+}
+.item-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.action-btn,.logout-btn{
+  max-width: 120px;
+  margin: auto .25rem;
+}

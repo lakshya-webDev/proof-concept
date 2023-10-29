@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "email": "customer1@example.com",
+      "name": "John Doe",
+      "username": "johndoe123",
+      "type": "customer",
+      "password": "password1",
+      "phone": "123-456-7890"
+    },
+    {
+      "email": "attendant1@example.com",
+      "name": "Alice Smith",
+      "username": "aliceattendant",
+      "type": "attendant",
+      "password": "password2",
+      "phone": "987-654-3210"
+    },
+    {
+      "email": "customer2@example.com",
+      "name": "Jane Smith",
+      "username": "janesmith456",
+      "type": "customer",
+      "password": "password3",
+      "phone": "555-555-5555"
+    },
+    {
+      "email": "attendant2@example.com",
+      "name": "Bob Johnson",
+      "username": "bobattendant",
+      "type": "attendant",
+      "password": "password4",
+      "phone": "111-222-3333"
+    }
+  ]
+}
