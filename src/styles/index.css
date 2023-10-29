@@ -151,3 +151,9 @@ button:focus-visible {
   max-width: 120px;
   margin: auto .25rem;
 }
+.text-left{
+  text-align: start;
+}
+.w-100{
+  width: 100%;
+}

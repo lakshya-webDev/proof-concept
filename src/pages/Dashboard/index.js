@@ -7,6 +7,7 @@ const Dashboard = (props) => {
   const filteredUsers = UserData.users.filter((user) => user.type === type);
   return (
     <div className="container">
+      <h2 className="text-left w-100">{type.toLowerCase() === "customer" ? " Customer View" : "Attendant View"}:</h2>
       <Table data={filteredUsers} currentUserData={props && props.userDetails}>
         <th>Name</th>
         <th>Email</th>

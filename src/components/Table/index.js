@@ -4,14 +4,14 @@ import Button from "../Button";
 
 const Table = ({ children, data, currentUserData }) => {
   return (
-    <table className="rwd-table">
+    <table className="rwd-table w-100">
       <thead>
         <tr>{children}</tr>
       </thead>
       <tbody>
         {data.map((user, index) => (
           <tr key={index} className={userMatchesCurrentUser(user, currentUserData) ? "active-user" : ""}>
-            <td>{user.name}</td>
+            <td>{userMatchesCurrentUser(user, currentUserData) ? "You": user.name}</td>
             <td>{user.email}</td>
             <td>{user.phone}</td>
             <td>
@@ -28,7 +28,7 @@ const Table = ({ children, data, currentUserData }) => {
 };
 
 const userMatchesCurrentUser = (user, currentUserData) => {
-    console.log(user,currentUserData)
+    console.log(user,currentUserData,"Current User")
   return user.email === currentUserData.email;
 };
 
