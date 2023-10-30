@@ -8,15 +8,15 @@ const Navbar = () => {
 
   useEffect(() => {
     // Check if the user is logged in (retrieve user data from localStorage)
-    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    const loggedInUser = JSON.parse(window.localStorage.getItem('loggedInUser'));
     if (loggedInUser && loggedInUser.isLoggedIn) {
       setUser(loggedInUser.userDetails);
     }
-  }, []);
+  }, []); 
 
   const handleLogout = () => {
     // Clear user data from localStorage and navigate to the login page
-    localStorage.removeItem('loggedInUser');
+    window.localStorage.removeItem('loggedInUser');
     setUser(null);
     navigate('/login');
   };

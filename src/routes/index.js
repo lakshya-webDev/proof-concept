@@ -10,7 +10,7 @@ import DashboardLayout from "../layouts/DashboardLayout";
 import Dashboard from "../pages/Dashboard";
 
 export const MyRoutes = () => {
-  const getUserDetails = JSON.parse(localStorage.getItem("loggedInUser"));
+  const getUserDetails = JSON.parse(window.localStorage.getItem("loggedInUser"));
   const isLoggedIn = getUserDetails ? getUserDetails.isLoggedIn : false;
   const userDetails = getUserDetails ? getUserDetails.userDetails : null;
 

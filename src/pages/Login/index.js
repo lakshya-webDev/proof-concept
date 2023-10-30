@@ -31,13 +31,13 @@ const Login = () => {
 
   useEffect(() => {
     // Check if the user is already logged in
-    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    const loggedInUser = JSON.parse(window.localStorage.getItem('loggedInUser'));
 
     if (loggedInUser && loggedInUser.isLoggedIn) {
       // Redirect to the dashboard or any other authorized page
       navigate('/dashboard');
     }
-  }, [navigate]);
+  }, []);
 
   return (
     <div className="login-box">
